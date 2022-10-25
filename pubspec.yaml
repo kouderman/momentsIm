@@ -1,0 +1,262 @@
+name: wechat_flutter
+description: A new Flutter project..
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.1+101
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #本地化
+  flutter_localizations:
+    sdk: flutter
+  #IOS风格材料图标
+  cupertino_icons: ^0.1.2
+  #即时通讯【腾讯云】
+  dim:
+    path: plugin/wechat_flutter_plugin
+  #持久化存储
+  #  shared_preferences: 0.5.2+2 #[Flutter2及之前]用这个
+  shared_preferences: ^2.0.8
+  #状态管理
+  #  provider: 4.3.1 #1.22.5版本Flutter用这个
+  provider: ^6.0.1 #Flutter2.5用这个
+  #  provider: ^5.0.0 #Flutter2用这个
+  #  cached_network_image: 1.1.1 # 1.9版本flutter
+  #  cached_network_image: 2.0.0 #1.22.5版本Flutter用这个
+  cached_network_image: ^3.0.0 #Flutter2用这个
+  #toast提示框
+  toast: 0.1.5
+  amap_flutter_map: ^3.0.0
+  amap_flutter_base: ^3.0.0
+  #web显示
+  webview_flutter: 0.3.22+1
+  pull_to_refresh: ^2.0.0
+  amap_search_fluttify: ^0.18.0
+  #  date_format: ^2.0.7
+  flutter_datetime_picker: ^1.5.1
+  get: ^4.6.5
+  badges: ^2.0.3
+  #选取图库
+  #  image_picker: 0.6.1+2 #flutter2或者之前的使用这个
+  image_picker: ^0.8.5+3 #Flutter2.10用这个,,其他可注释
+  flutter_picker: ^1.0.11
+  geolocator: ^9.0.2
+  amap_flutter_location: ^3.0.0
+
+  #  getwidget: ^3.0.1
+  #文本扩展显示
+  #  extended_text: 1.0.1  #1.17版本Flutter用这个
+  #  extended_text: 4.0.0 #1.20版本Flutter用这个
+  #  extended_text: 4.0.1 #1.22.5版本Flutter用这个
+  #  extended_text: ^6.0.5 #Flutter2用这个,,其他可注释
+  #  extended_text: ^7.0.0 #flutter2.5用这个,,其他可注释
+  extended_text: ^9.0.0 #flutter2.10.4用这个,,其他可注释
+  #文字表情混入
+  #  extended_text_field: 1.0.1  #1.17版本Flutter用这个
+  #  extended_text_field: 4.0.0  #1.20版本Flutter用这个
+  #  extended_text_field: 5.0.1 #1.22.5版本Flutter用这个
+  #  extended_text_field: ^7.0.1 #Flutter2用这个,,其他可注释
+  #  extended_text_field: ^8.0.0 #Flutter2.5用这个,,其他可注释
+  extended_text_field: ^10.0.0 #Flutter2.10用这个,,其他可注释
+  #  extended_text_library: 4.0.2 #1.22.5版本Flutter用这个,,其他可注释
+  #  extended_text_library: ^6.0.0 #Flutter2用这个,,其他可注释
+  #  extended_text_library: ^7.0.0 #Flutter2.5用这个,,其他可注释
+  extended_text_library: ^9.0.0 #Flutter2.10用这个,,其他可注释
+  #打开系统浏览器
+  url_launcher: 5.2.7
+  path_provider: ^2.0.11
+  video_thumbnail: 0.5.0
+
+  #网络连接
+  connectivity: 0.4.6
+  #图片显示
+  photo_view: 0.4.2
+  #  dio: 2.2.2  #低于Flutter-1.17使用此版本
+  #  dio: 3.0.9  #1.22.5版本Flutter用这个
+  dio: ^4.0.0 #Flutter2用这个
+  #打开文件
+  #  open_file: 2.0.3  #flutter2或者之前的使用这个
+  open_file: ^3.2.1 #flutter 2.10使用这个
+  #获取包信息
+  #  package_info: 0.4.0+2 #flutter2或者之前的使用这个
+  package_info_plus: ^1.4.0 #flutter 2.10使用这个
+  #音频处理
+  #  flutter_sound: 1.7.0 # flutter 2.10之前的用这个
+  flutter_sound: ^9.2.9 # flutter 2.10用这个
+  audio_session: ^0.1.6
+  #权限处理
+  #  permission_handler: 3.1.0  # flutter 2.10之前的用这个
+  permission_handler: ^9.2.0 # flutter 2.10用这个
+  event_bus: ^2.0.0
+  #音频处理
+  #  audioplayers: 0.13.3 #1.22.5版本Flutter用这个
+  audioplayers: ^0.19.0 #Flutter2用这个
+  #调用相机
+  camera: # 0.5.7+1
+    path: plugin/camera
+  #视频播放
+  #  video_player: 0.10.11+2 #1.22.5版本Flutter用这个
+  video_player: ^2.4.7 #Flutter2用这个
+  #图片压缩
+  #  flutter_image_compress: 0.6.8 # flutter 2.10之前的用这个
+  #  flutter_image_compress: ^1.1.0 # flutter 2.10用这个
+  #拼音
+  lpinyin: ^1.0.7
+#  flutter_inappwebview: ^5.4.3+7
+  #特殊列表滑动
+  azlistview: ^0.1.0
+  #微信图库
+  #  wechat_assets_picker: ^4.2.1 #1.22.5版本Flutter用这个
+  #  wechat_assets_picker: ^5.4.0 #Flutter2用这个
+  wechat_assets_picker: ^6.2.3 #flutter2.5用这个
+  #扩展图片
+  extended_image: 6.0.2+1 # flutter 2.10 用这个
+  #平台
+  platform: ^3.1.0 # flutter 2.10 用这个
+  flutter_easyloading: ^3.0.5
+#  multi_image_picker_view: ^0.0.5
+  flutter_xupdate: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/bsc.webp
+    - assets/images/bar_close.png
+    - assets/images/tabbar_contacts_c.webp
+    - assets/images/tabbar_contacts_s.webp
+    - assets/images/tabbar_discover_c.webp
+    - assets/images/tabbar_discover_s.webp
+    - assets/images/tabbar_chat_c.webp
+    - assets/images/tabbar_chat_s.webp
+    - assets/images/tabbar_me_c.webp
+    - assets/images/tabbar_me_s.webp
+    - assets/images/def_avatar.png
+    - assets/images/search_black.webp
+    - assets/images/search_white.png
+    - assets/images/Contact_Female.webp
+    - assets/images/likecc.png
+    - assets/images/Contact_Male.webp
+    - assets/images/right_more.png
+    - assets/images/favorite.webp
+    - assets/images/guanzhu.png
+    - assets/images/fensi.png
+    - assets/images/camera.png
+    - assets/images/camera_0.png
+    - assets/images/contacts_add_newmessage.png
+    - assets/images/add_addressicon.png
+    - assets/images/ic_delete.webp
+    - assets/images/ic_right_arrow_black.webp
+    - assets/images/ic_right_arrow_grey.webp
+    - assets/images/ic_add_friend.webp
+    - assets/images/ic_no_data.webp
+    - assets/images/add_photo.png
+    - assets/images/delete.png
+    - assets/images/location.png
+    - assets/images/group.webp
+    - assets/images/upload_video.png
+    - assets/images/upload_image.png
+    - assets/images/im_video.png
+    - assets/images/se_camera.png
+
+    - assets/images/login/select_avatar.webp
+    - assets/images/login/ic_select_have.webp
+    - assets/images/login/ic_select_have_grey.webp
+    - assets/images/login/ic_select_no.png
+    - assets/images/ok.png
+    - assets/images/man.png
+    - assets/images/woman.png
+    - assets/images/F1.png
+    - assets/images/F1_1.png
+    - assets/images/M1.png
+    - assets/images/M1_1.png
+    - assets/images/like.png
+    - assets/images/report.png
+    - assets/images/smile.png
+    - assets/images/likec.png
+    - assets/images/say.png
+
+    - assets/images/chat/ic_Emotion.webp
+    - assets/images/chat/ic_Keyboard.webp
+    - assets/images/chat/ic_details_add.png
+    - assets/images/chat/ic_voice.webp
+    - assets/images/chat/ic_chat_more.webp
+    - assets/images/chat/ic_chat_voice.webp
+    - assets/images/chat/ic_details_camera.webp
+    - assets/images/chat/ic_details_card.webp
+    - assets/images/chat/ic_details_favorite.webp
+    - assets/images/chat/ic_details_file.webp
+    - assets/images/chat/ic_details_localtion.webp
+    - assets/images/chat/ic_details_media.webp
+    - assets/images/chat/ic_details_photo.webp
+    - assets/images/chat/ic_details_red.webp
+    - assets/images/chat/ic_details_transfer.webp
+    - assets/images/chat/ic_details_video.webp
+    - assets/images/chat/voice_volume_1.webp
+    - assets/images/chat/voice_volume_2.webp
+    - assets/images/chat/voice_volume_3.webp
+    - assets/images/chat/voice_volume_4.webp
+    - assets/images/chat/voice_volume_5.webp
+    - assets/images/chat/voice_volume_6.webp
+    - assets/images/chat/voice_volume_7.webp
+    - assets/images/chat/sound_left_0.webp
+    - assets/images/chat/sound_left_1.webp
+    - assets/images/chat/sound_left_2.webp
+    - assets/images/chat/sound_left_3.webp
+    - assets/images/chat/sound_right_0.png
+    - assets/images/chat/sound_right_1.webp
+    - assets/images/chat/sound_right_2.webp
+    - assets/images/chat/sound_right_3.png
+    - assets/images/chat/icon_sight_close.png
+    - assets/images/chat/flip_camera_icon_nor.webp
+
+    - assets/images/mine/ic_small_code.png
+    - assets/images/mine/ic_wallet.webp
+    - assets/images/mine/ic_card_package.png
+    - assets/images/mine/ic_emoji.png
+    - assets/images/mine/ic_pay.png
+    - assets/images/mine/ic_setting.png
+
+    - assets/images/contact/ic_contacts_details.png
+    - assets/images/contact/ic_no_public.webp
+    - assets/images/contact/ic_tag.webp
+    - assets/images/contact/ic_group.webp
+    - assets/images/contact/ic_new_friend.webp
+    - assets/images/contact/ic_video.png
+    - assets/images/contact/ic_voice.png
+    - assets/images/contact/ic_offical.webp
+    - assets/images/contact/ic_reda.webp
+    - assets/images/contact/ic_scanqr.webp
+    - assets/images/contact/ic_search_wework.webp
+    - assets/images/contact/ic_contact_add.webp
+    - assets/images/wechat/in/default_nor_avatar.png
+
+    - assets/images/discover/ff_Icon_album.webp
+    - assets/images/discover/ff_Icon_shake.webp
+    - assets/images/discover/ff_Icon_bottle.webp
+    - assets/images/discover/ff_Icon_browse.webp
+    - assets/images/discover/ff_Icon_nearby.webp
+    - assets/images/discover/ff_Icon_qr_code.webp
+    - assets/images/discover/ff_Icon_search.webp
+    - assets/images/discover/game_center_h5.webp
+    - assets/images/discover/mini_program.webp
+    - assets/images/emoji/
+    - assets/images/group/
+    - assets/images/wechat/
+    - assets/images/wechat/in/
+
+    - assets/data/contacts.json
+    - assets/data/friends.json
+    - assets/data/config.json
+    - assets/static/sounds/msg.mp3
+    - assets/msg.mp3
